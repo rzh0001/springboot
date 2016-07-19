@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <classPathEntry location="/Users/Smily/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar"/>
+  <context id="context1">
+    <commentGenerator>
+    	<property name="suppressDate" value="true"/>
+    </commentGenerator>
+    
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/auth" driverClass="com.mysql.jdbc.Driver" password="root" userId="root" />
+    <javaTypeResolver>
+    	<property name="forceBigDecimals" value="true"/>
+    </javaTypeResolver>
+    <javaModelGenerator targetPackage="com.example.bean" targetProject="demo" />
+    <sqlMapGenerator targetPackage="com.example.dao" targetProject="demo" />
+    <javaClientGenerator targetPackage="com.example.dao" targetProject="demo" type="XMLMAPPER" />
+    <table schema="auth" tableName="auth_user"/>
+    <table schema="auth" tableName="auth_user_role"/>
+    <table schema="auth" tableName="tb_user"/>
+  </context>
+</generatorConfiguration>
