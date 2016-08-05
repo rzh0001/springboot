@@ -1,4 +1,4 @@
-package com.artbrain.entity;
+package com.smily.entity;
 
 public class User {
 

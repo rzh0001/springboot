@@ -1,7 +1,8 @@
-package com.artbrain.mapper;
+package com.smily.mapper;
 
-import com.artbrain.entity.User;
 import org.springframework.stereotype.Service;
+
+import com.smily.entity.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

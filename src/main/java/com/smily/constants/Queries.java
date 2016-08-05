@@ -1,4 +1,4 @@
-package com.artbrain.constants;
+package com.smily.constants;
 
 public interface Queries {
   //user table
